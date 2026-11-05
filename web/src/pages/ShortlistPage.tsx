@@ -103,12 +103,10 @@ export const ShortlistPage: React.FC = () => {
                     {/* Header */}
                     <div className="flex items-start justify-between gap-3 mb-3">
                       <div className="flex items-center gap-3">
-                        <div className="w-12 h-12 rounded-[8px] bg-white border border-[#E1E4EA] p-1 flex items-center justify-center overflow-hidden shrink-0 shadow-xs">
-                          <img
-                            src={uni.logo}
-                            alt={uni.name}
-                            className="w-full h-full object-cover rounded"
-                          />
+                        <div className="w-12 h-12 rounded-[8px] flex items-center justify-center shrink-0 shadow-xs" style={{ backgroundColor: uni.badgeAccent || '#17284A' }}>
+                          <span className="text-white text-[10px] font-bold leading-none text-center px-1">
+                            {uni.shortName.slice(0, 4)}
+                          </span>
                         </div>
                         <div>
                           <span className="text-[11px] font-bold text-[#C79A3D] uppercase">

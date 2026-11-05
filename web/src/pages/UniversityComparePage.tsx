@@ -118,12 +118,10 @@ export const UniversityComparePage: React.FC = () => {
                   <th key={uni.id} className="p-4 w-1/4 border-l border-[#E1E4EA] align-top">
                     <div className="flex items-start justify-between gap-2">
                       <div className="flex items-center gap-2">
-                        <div className="w-8 h-8 rounded bg-white border border-[#E1E4EA] p-1 overflow-hidden shrink-0">
-                          <img
-                            src={uni.logo}
-                            alt={uni.name}
-                            className="w-full h-full object-cover"
-                          />
+                        <div className="w-8 h-8 rounded flex items-center justify-center shrink-0" style={{ backgroundColor: uni.badgeAccent || '#17284A' }}>
+                          <span className="text-white text-[8px] font-bold leading-none text-center px-0.5">
+                            {uni.shortName.slice(0, 4)}
+                          </span>
                         </div>
                         <div>
                           <span className="font-serif text-sm font-bold text-[#17284A] block">

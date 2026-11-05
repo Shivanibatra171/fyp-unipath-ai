@@ -12,7 +12,7 @@ export const UNIVERSITIES_DATA: University[] = [
     founded: 1991,
     hecRanking: '#1 General Category (Engineering & Technology)',
     qsRanking: '#353 Global (QS World University Rankings 2025)',
-    logo: 'https://ui-avatars.com/api/font-size=0.4',
+    logo: 'https://ui-avatars.com/api/?name=NUST&background=17284A&color=fff&size=160&bold=true&font-size=0.4',
     badgeAccent: '#17284A',
     overview: "NUST is Pakistan's premier science and technology research institution located in Sector H-12, Islamabad. Spanning over 700 acres, it houses state-of-the-art schools including SEECS, SMME, SCME, ASAB, and NBS. NUST is internationally accredited with Washington Accord (PEC) Tier-1 engineering status.",
     accreditations: ['PEC Tier-1 (Washington Accord)', 'HEC Recognized', 'NCEAC (Computing)', 'AACSB Member (NBS)'],

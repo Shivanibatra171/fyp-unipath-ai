@@ -286,12 +286,10 @@ export const DashboardPage: React.FC = () => {
                 className="p-4 rounded-[8px] bg-[#FAFBFD] border border-[#E1E4EA] hover:border-[#CAD0DC] flex flex-col sm:flex-row sm:items-center justify-between gap-3"
               >
                 <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-[8px] bg-white border border-[#E1E4EA] p-1 flex items-center justify-center overflow-hidden shrink-0">
-                    <img
-                      src={uni.logo}
-                      alt={uni.name}
-                      className="w-full h-full object-cover rounded"
-                    />
+                  <div className="w-10 h-10 rounded-[8px] flex items-center justify-center shrink-0" style={{ backgroundColor: uni.badgeAccent || '#17284A' }}>
+                    <span className="text-white text-[9px] font-bold leading-none text-center px-0.5">
+                      {uni.shortName.slice(0, 4)}
+                    </span>
                   </div>
                   <div>
                     <h4 className="font-serif text-sm font-bold text-[#17284A]">
