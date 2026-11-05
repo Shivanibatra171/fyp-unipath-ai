@@ -1,7 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import {
-  Sparkles,
   Bookmark,
   Scale,
   ArrowRight,
@@ -9,7 +8,8 @@ import {
   CheckCircle2,
   DollarSign,
   Building,
-  GraduationCap
+  GraduationCap,
+  Info
 } from 'lucide-react';
 import { Program, University } from '../../types';
 import { useShortlist } from '../../context/ShortlistContext';
@@ -47,12 +47,10 @@ export const ProgramCard: React.FC<ProgramCardProps> = ({
         {/* Card Header with University Name & Fit Percentage */}
         <div className="p-5 border-b border-[#E1E4EA] bg-[#FAFBFD] flex items-start justify-between gap-3">
           <div className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-[8px] bg-white border border-[#E1E4EA] p-1 flex items-center justify-center shrink-0 overflow-hidden shadow-xs">
-              <img
-                src={university.logo}
-                alt={university.name}
-                className="w-full h-full object-cover rounded"
-              />
+            <div className="w-10 h-10 rounded-[8px] bg-[#17284A] flex items-center justify-center shrink-0 shadow-xs">
+              <span className="text-white text-[10px] font-bold leading-none text-center px-1">
+                {university.shortName.slice(0, 4)}
+              </span>
             </div>
             <div>
               <span className="text-[11px] font-bold text-[#C79A3D] uppercase tracking-wider block">
@@ -79,7 +77,7 @@ export const ProgramCard: React.FC<ProgramCardProps> = ({
         <div className="p-5 space-y-3.5">
           {/* Fit Rationale Callout */}
           <div className="bg-[#FDF7EC] border border-[#E9CCA0] p-2.5 rounded-[8px] flex items-start gap-2 text-xs text-[#8C661D]">
-            <Sparkles className="w-4 h-4 shrink-0 mt-0.5 text-[#C79A3D]" />
+            <Info className="w-4 h-4 shrink-0 mt-0.5 text-[#C79A3D]" />
             <p className="font-medium leading-relaxed">
               <strong className="text-[#17284A]">Fit Rationale: </strong>
               {fitRationale}

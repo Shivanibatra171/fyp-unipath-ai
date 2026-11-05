@@ -14,7 +14,7 @@ import {
   Bookmark,
   Scale,
   CheckCircle2,
-  Sparkles,
+  Info,
   ArrowLeft,
   BookOpen
 } from 'lucide-react';
@@ -61,12 +61,10 @@ export const UniversityDetailPage: React.FC = () => {
       <div className="bg-white rounded-[12px] border border-[#E1E4EA] p-6 sm:p-8 shadow-xs space-y-6">
         <div className="flex flex-col md:flex-row md:items-start justify-between gap-6">
           <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
-            <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-[12px] bg-white border border-[#E1E4EA] p-2 flex items-center justify-center shrink-0 shadow-xs overflow-hidden">
-              <img
-                src={university.logo}
-                alt={university.name}
-                className="w-full h-full object-cover rounded"
-              />
+            <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-[12px] bg-[#17284A] flex items-center justify-center shrink-0 shadow-xs">
+              <span className="text-white text-sm font-bold leading-none text-center px-2">
+                {university.shortName.slice(0, 4)}
+              </span>
             </div>
 
             <div className="space-y-1">

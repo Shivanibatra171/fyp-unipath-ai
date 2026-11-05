@@ -8,7 +8,6 @@ import {
   Bookmark,
   Check,
   Scale,
-  Sparkles
 } from 'lucide-react';
 import { UNIVERSITIES_DATA } from '../../data/universitiesData';
 import { useShortlist } from '../../context/ShortlistContext';
@@ -80,12 +79,10 @@ export const UniversityShowcase: React.FC = () => {
                   {/* Card Top Banner / Badges */}
                   <div className="p-5 border-b border-[#E1E4EA] bg-[#FAFBFD] flex items-start justify-between gap-3">
                     <div className="flex items-center gap-3">
-                      <div className="w-12 h-12 rounded-[8px] bg-white border border-[#E1E4EA] p-1 flex items-center justify-center shadow-xs overflow-hidden">
-                        <img
-                          src={uni.logo}
-                          alt={uni.name}
-                          className="w-full h-full object-cover rounded"
-                        />
+                      <div className="w-12 h-12 rounded-[8px] bg-[#17284A] flex items-center justify-center shadow-xs shrink-0">
+                        <span className="text-white text-[10px] font-bold leading-none text-center px-1">
+                          {uni.shortName.slice(0, 4)}
+                        </span>
                       </div>
                       <div>
                         <span className="text-xs font-bold text-[#C79A3D] tracking-wide">
